@@ -3,24 +3,25 @@ import { FiDownload, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { BsEnvelope } from "react-icons/bs";
 import profile from "../assets/profile.jpg";
 import { motion } from "framer-motion";
+import { LuSparkles } from "react-icons/lu";
 
 
 const Hero = () => {
     return (
         <section
             id="home"
-            className="min-h-screen bg-[#0f172a] text-white pt-24 md:pt-40 px-4 md:px-8"
+            className="min-h-screen bg-[#0f172a] text-white pt-24 md:pt-48 px-4 md:px-8"
         >
             <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-5">
                 {/* Left Content */}
                 <motion.div
-                    className="space-y-6 max-w-2xl"
+                    className="space-y-6 max-w-3xl"
                     initial={{ opacity: 0, x: -40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <span className="inline-block rounded-full border border-purple-800 px-5 py-1 bg-[#13203f] md:text-xl font-medium">
-                        Welcome to my portfolio!
+                    <span className="inline-flex items-center gap-2 rounded-full border border-purple-800 px-5 py-1 bg-[#13203f] md:text-lg font-medium">
+                    <LuSparkles /> Welcome to my portfolio!
                     </span>
 
                     <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
@@ -35,9 +36,7 @@ const Hero = () => {
                     </h2>
 
                     <p className="text-gray-400 md:text-lg leading-relaxed">
-                        I love building modern, responsive, and accessible websites that
-                        solve real-world problems. With a strong passion for JavaScript and
-                        UI/UX, I bring your ideas to life through clean code and thoughtful
+                    Passionate about building real-world projects that solve real problems. With a strong focus for JavaScript and UI/UX, I bring your ideas to life through clean code and thoughtful
                         design.
                     </p>
 
@@ -94,7 +93,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
-                    <div className="w-64 h-64 md:w-88 md:h-88 rounded-full bg-gradient-to-tr from-purple-700 to-indigo-700 p-1.5 md:-mt-12">
+                    <div className="w-64 h-64 md:w-88 md:h-88 rounded-full bg-gradient-to-tr from-purple-700 to-indigo-700 p-1.5 md:-mt-16">
                         <img
                             className="w-full h-full object-cover rounded-full"
                             src={profile}

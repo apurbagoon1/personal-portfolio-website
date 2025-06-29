@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+}
+
+@keyframes gradient-y {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 0% 100%; }
+}
+
+.animate-gradient-y {
+  background-size: 100% 200%;
+  animation: gradient-y 3s ease infinite;
 }
