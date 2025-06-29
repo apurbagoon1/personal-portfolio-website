@@ -11,7 +11,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="bg-[#0f172a] text-white py-20 px-4 md:px-8"
+            className="bg-[#141e36] text-white py-20 px-4 md:px-8"
         >
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">
@@ -26,7 +26,7 @@ const About = () => {
                     {/* My Programming Journey */}
                     <div
                         data-aos="fade-up"
-                        className="flex-1 bg-[#1e293b]/70 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] text-left transition-transform duration-500 hover:shadow-indigo-800"
+                        className="flex-1 bg-[#1e293b]/50 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] text-left transition-transform duration-500 hover:shadow-indigo-800"
                     >
                         <h3 className="text-xl md:text-2xl font-semibold mb-4 flex items-center gap-3">
                             <span className="h-6 w-1.5 rounded-full bg-gradient-to-b from-purple-400 to-cyan-400 animate-gradient-y"></span>
@@ -69,7 +69,7 @@ const About = () => {
                     <div
                         data-aos="fade-up"
                         data-aos-delay="200"
-                        className="flex-1 bg-[#1e293b]/70 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] text-left transition-transform duration-500 hover:shadow-indigo-800"
+                        className="flex-1 bg-[#1e293b]/50 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] text-left transition-transform duration-500 hover:shadow-indigo-800"
                     >
                         <h3 className="text-xl md:text-2xl font-semibold mb-4 flex items-center gap-3">
                             <span className="h-6 w-1.5 rounded-full bg-gradient-to-b from-purple-400 to-cyan-400 animate-gradient-y"></span>

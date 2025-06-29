@@ -3,7 +3,7 @@ import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <section id="education" className="bg-[#0f172a] text-white py-20 px-4 md:px-8">
+    <section id="education" className="bg-[#141e36] text-white py-20 px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-4">Education</h2>
         <div className="h-1 w-24 mx-auto bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse mb-4"></div>
@@ -14,7 +14,7 @@ const Education = () => {
         <div className="space-y-8">
 
           {/* BSC */}
-          <div data-aos="fade-up" className="bg-[#1e293b]/70 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] flex flex-col md:flex-row justify-between gap-6 transition-transform duration-300 hover:shadow-indigo-800">
+          <div data-aos="fade-up" className="bg-[#1e293b]/50 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] flex flex-col md:flex-row justify-between gap-6 transition-transform duration-300 hover:shadow-indigo-800">
             <div>
               <h3 className="text-xl font-semibold mb-1">Bachelor of Science in Computer Science & Engineering</h3>
               <p className="text-blue-400 mb-4">American International University-Bangladesh</p>
@@ -50,7 +50,7 @@ const Education = () => {
           </div>
 
           {/* HSC */}
-          <div data-aos="fade-up" className="bg-[#1e293b]/70 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] flex flex-col md:flex-row justify-between gap-6 transition-transform duration-300 hover:shadow-indigo-800">
+          <div data-aos="fade-up" className="bg-[#1e293b]/50 backdrop-blur-md rounded-2xl p-6 shadow-md border border-[#334155] flex flex-col md:flex-row justify-between gap-6 transition-transform duration-300 hover:shadow-indigo-800">
             <div>
               <h3 className="text-xl font-semibold mb-1">Higher Secondary Certificate (HSC)</h3>
               <p className="text-blue-400 mb-4">Dhaka Imperial College</p>

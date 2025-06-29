@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "Suggesto - Product Recommendation System",
+    "images": [
+      "https://i.ibb.co/TxbzpWQ3/Screenshot-141.png",
+      "https://i.ibb.co/m5zyd59C/Screenshot-142.png",
+      "https://i.ibb.co/kgf37HHq/Screenshot-143.png",
+      "https://i.ibb.co/fYGgbydY/Screenshot-144.png",
+      "https://i.ibb.co/7f08L66/Screenshot-145.png"
+    ],
+    "summary": "A full-featured product recommendation platform where users can add queries, recommend products, and explore suggestions.",
+    "techStack": [
+      "React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Firebase",
+      "TailwindCSS"
+    ],
+    "description": "Suggesto allows users to add, update, and delete product-related queries, explore others’ queries, and recommend alternative products. Features include JWT authentication, protected routes, and a dynamic UI built with TailwindCSS and Framer Motion.",
+    "liveLink": "https://suggesto-product-reco.web.app/",
+    "githubLink": "https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-apurbagoon1",
+    "keyFeatures": [
+      "Email/Password and Google sign-in with JWT authentication",
+      "Protected routes with dynamic navigation",
+      "Manage product queries (add, update, delete)",
+      "Recommend products on others' queries",
+      "Responsive UI with Framer Motion & Lottie",
+      "Search queries by product name"
+    ],
+    "challenges": [
+      "Implementing JWT authentication with secure protected routes.",
+      "Updating recommendation counts in real-time using MongoDB $inc.",
+      "Handling complex state transitions and conditionally rendering data."
+    ],
+    "futurePlans": [
+      "Add admin dashboards.",
+      "User activity history.",
+      "Machine learning based recommendations."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "GreenNote - Plant Care Tracker",
+    "images": [
+      "https://i.ibb.co/YBsQswB5/Screenshot-146.png",
+      "https://i.ibb.co/QFvV6j3c/Screenshot-147.png",
+      "https://i.ibb.co/Nn3mkRds/Screenshot-148.png",
+      "https://i.ibb.co/qMjXM5g8/Screenshot-149.png",
+      "https://i.ibb.co/k6Xj9mmV/Screenshot-150.png"
+    ],
+    "summary": "A sleek app to log, track, and manage houseplant care tasks with reminders and personalized dashboards.",
+    "techStack": [
+      "React.js", "Firebase", "Node.js", "Express.js", "MongoDB", "TailwindCSS"
+    ],
+    "description": "GreenNote helps plant lovers track care tasks, manage personalized plant dashboards, and monitor watering schedules. Features include theme toggling, authentication, and animated UI elements.",
+    "liveLink": "https://plant-care-tracker-5772a.web.app/",
+    "githubLink": "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-apurbagoon1",
+    "keyFeatures": [
+      "Secure login with email/password & Google OAuth",
+      "Add, update, and delete personal plant data",
+      "Track watering and fertilizing dates",
+      "Sort plants by care level",
+      "Theme toggle for dark/light modes",
+      "Responsive UI with Lottie animations & tooltips"
+    ],
+    "challenges": [
+      "Implementing secure private routes with Firebase Auth.",
+      "Handling responsive theme toggling and animations.",
+      "Managing local state for dynamic care tracking."
+    ],
+    "futurePlans": [
+      "Calendar view for watering/fertilizing.",
+      "Push notifications.",
+      "User profiles for sharing plant collections."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Jasmine - Event Management Platform",
+    "images": [
+      "https://i.ibb.co/d0xxhVZV/Screenshot-151.png",
+      "https://i.ibb.co/rR470Pqc/Screenshot-152.png",
+      "https://i.ibb.co/Z6FbGW9r/Screenshot-153.png",
+      "https://i.ibb.co/LzzpdL8D/Screenshot-154.png",
+      "https://i.ibb.co/XNG1BHr/Screenshot-155.png"
+    ],
+    "summary": "Discover, reserve, and explore events with a modern, responsive platform and user-friendly UI/UX.",
+    "techStack": [
+      "React.js", "Firebase", "TailwindCSS", "DaisyUI"
+    ],
+    "description": "Jasmine is an event platform to explore upcoming conferences, workshops, and exhibitions. Users can reserve seats, manage profiles, and browse blogs, all within a beautifully animated UI.",
+    "liveLink": "https://jasmine-event-management.web.app/",
+    "githubLink": "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-apurbagoon1",
+    "keyFeatures": [
+      "Responsive navbar, footer & 404 page",
+      "Firebase authentication with password rules",
+      "Protected routes for profiles & event details",
+      "Swiper slider on home, event cards & booking form",
+      "Profile page to update name/photo",
+      "Forget password & dynamic page titles"
+    ],
+    "challenges": [
+      "Protected routing with Firebase and enforcing password policies.",
+      "Loading spinners and graceful fallback handling for missing routes.",
+      "Maintaining dynamic UI states with local JSON data."
+    ],
+    "futurePlans": [
+      "Admin panels for adding/editing events.",
+      "RSVP notifications and payments integration.",
+      "Advanced calendar view."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "DocTalk - Medical Appointment Booking Application",
+    "images": [
+      "https://i.ibb.co/G4TwsWyT/Screenshot-156.png",
+      "https://i.ibb.co/ns0grq0F/Screenshot-157.png",
+      "https://i.ibb.co/xKQkWjCb/Screenshot-158.png",
+      "https://i.ibb.co/rRNG17mR/Screenshot-160.png",
+      "https://i.ibb.co/XfCrHdPX/Screenshot-161.png"
+    ],
+    "summary": "A comprehensive React app for scheduling and managing doctor appointments with charts, persistent state, and elegant UX.",
+    "techStack": [
+      "React.js", "React Router", "TailwindCSS", "DaisyUI"
+    ],
+    "description": "DocTalk is a full medical appointment platform with multiple pages, secure authentication, data persistence via localStorage, and visual representation using Recharts. Users can browse doctors, view details, book appointments, and see real-time updates reflected in charts.",
+    "liveLink": "https://agn-doc-talk.netlify.app/",
+    "githubLink": "https://github.com/programming-hero-web-course1/b11a8-router-booking-apurbagoon1",
+    "keyFeatures": [
+      "Doctor cards with detailed info & availability badges",
+      "Secure appointment booking with localStorage",
+      "Dynamic charts with Recharts reflecting cancellations",
+      "Global loading spinner & graceful fallback on reload",
+      "404 page with redirect to home",
+      "Responsive UI with count animations"
+    ],
+    "challenges": [
+      "Validating booking slots based on doctor availability.",
+      "Managing persistent appointment state using localStorage.",
+      "Building interactive charts with dynamic updates when canceling appointments."
+    ],
+    "futurePlans": [
+      "Add dynamic calendar and reminder emails.",
+      "Enable admin dashboards for doctor scheduling.",
+      "Support video consultations integration."
+    ]
+  }
+]
