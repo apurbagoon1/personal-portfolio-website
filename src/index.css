@@ -1,19 +1,36 @@
 @import "tailwindcss";
 
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
+.font-logo {
+    font-family: "Dancing Script", cursive;
+}
+
+.font-logo2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+
 @keyframes gradient-y {
-  0%, 100% { background-position: 0% 0%; }
-  50% { background-position: 0% 100%; }
+
+    0%,
+    100% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 100%;
+    }
 }
 
 .animate-gradient-y {
-  background-size: 100% 200%;
-  animation: gradient-y 3s ease infinite;
+    background-size: 100% 200%;
+    animation: gradient-y 3s ease infinite;
 }

@@ -35,7 +35,7 @@ const Hero = () => {
                         Full Stack Web Developer | MERN Stack Enthusiast
                     </h2>
 
-                    <p className="text-gray-400 md:text-lg leading-relaxed">
+                    <p className="text-gray-400 md:text-lg leading-relaxed text-justify">
                     Passionate about building real-world projects that solve real problems. With a strong focus for JavaScript and UI/UX, I bring your ideas to life through clean code and thoughtful
                         design.
                     </p>

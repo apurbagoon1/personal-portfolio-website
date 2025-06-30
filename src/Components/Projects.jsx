@@ -17,6 +17,10 @@ const Projects = () => {
       .then((data) => setProjects(data));
   }, []);
 
+  useEffect(() => {
+    document.title = "Apurba Goon | About";
+  }, []);
+
   return (
     <section id="projects" className="py-10 md:py-20 bg-[#0f172a] text-gray-300">
       <div className="max-w-7xl mx-auto px-4">

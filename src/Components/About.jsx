@@ -107,7 +107,7 @@ const About = () => {
                             {["Cricket", "Badminton", "Hiking","Travelling", "Photography", "Reading", "Gaming", "Cooking"].map((hobby) => (
                                 <span
                                     key={hobby}
-                                    className="px-3.5 py-1 border border-indigo-500 rounded-full bg-gradient-to-r from-purple-700/50 to-cyan-700/50 text-sm tracking-wider text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:from-cyan-800 hover:to-purple-800 cursor-pointer"
+                                    className="px-3.5 py-1 border border-indigo-800/70 rounded-full bg-indigo-800/10 text-sm tracking-wider text-white transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
                                 >
                                     {hobby}
                                 </span>

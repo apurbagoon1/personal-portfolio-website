@@ -6,8 +6,10 @@ import Skills from '../Components/Skills';
 import Education from '../Components/Education';
 import Projects from '../Components/Projects';
 import Contact from '../Components/Contact';
+import useDynamicTitleOnScroll from "../hooks/useDynamicTitleOnScroll";
 
 const Home = () => {
+    useDynamicTitleOnScroll();
     return (
         <div className="bg-[#0f172a] text-white font-sans">
             <header>
@@ -21,6 +23,8 @@ const Home = () => {
                 <Projects></Projects>
                 <Contact></Contact>
             </main>
+            <footer>
+            </footer>
         </div>
     );
 };

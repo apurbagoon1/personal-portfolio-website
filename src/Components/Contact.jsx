@@ -53,7 +53,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-[#141e36] text-gray-300 py-16 px-4 md:px-8" id="contact">
+        <section id="contact" className="bg-[#141e36] text-gray-300 py-16 px-4 md:px-8">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-2xl md:text-4xl font-bold text-white">
@@ -67,7 +67,7 @@ const Contact = () => {
 
                 <div className="grid md:grid-cols-2 gap-10 items-start">
                     {/* Left Contact Info */}
-                    <div className="space-y-6 md:mt-4">
+                    <div data-aos="fade-up" className="space-y-6 md:mt-4">
                         <h3 className="text-xl md:text-2xl font-semibold">Contact Information</h3>
                         <p className="text-gray-400 max-w-lg">
                             I'm open for new opportunities and collaborations. If you're hiring or have a project in mind, feel free to reach out.
@@ -111,7 +111,7 @@ const Contact = () => {
                     </div>
 
                     {/* Right Contact Form */}
-                    <form ref={formRef}
+                    <form data-aos="fade-up" ref={formRef}
                         onSubmit={handleSubmit} className="bg-[#1e293b]/70 p-6 rounded-xl shadow-md space-y-6">
                         <h3 className="text-xl font-semibold mb-3 text-white">Send Me a Message</h3>
                         <div className="grid md:grid-cols-2 gap-4">

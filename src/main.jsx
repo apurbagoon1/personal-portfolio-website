@@ -8,6 +8,8 @@ import {
 } from "react-router";
 import Home from './Pages/Home.jsx';
 import ProjectDetails from './Pages/ProjectDetails.jsx';
+import ErrorPage from './Pages/ErrorPage.jsx';
+import Loading from './Pages/Loading.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,9 +22,11 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>Error</div>
+    element: <ErrorPage></ErrorPage>
   }
-]);
+], {
+  fallbackElement: <Loading></Loading>
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

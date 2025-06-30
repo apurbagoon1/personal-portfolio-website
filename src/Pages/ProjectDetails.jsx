@@ -7,6 +7,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
+import Loading from "./Loading";
 
 const techIcons = {
     "React.js": <SiReact className="text-sky-400 text-2xl" />,
@@ -44,6 +45,8 @@ const ProjectDetails = () => {
     const [project, setProject] = useState(null);
 
     useEffect(() => {
+                document.title = "Apurba Goon | Project Details";
+
         fetch("/projects.json")
             .then(res => res.json())
             .then(data => {
@@ -53,7 +56,7 @@ const ProjectDetails = () => {
     }, [id]);
 
     if (!project) {
-        return <div className="text-center text-3xl font-bold my-20">Loading...</div>;
+        return <Loading></Loading>;
     }
 
     return (
@@ -66,7 +69,7 @@ const ProjectDetails = () => {
                     className="mb-8"
                 >
                     <Link
-                        to="/"
+                        to="/#projects"
                         className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 border border-cyan-400 rounded-full text-cyan-400 hover:bg-cyan-400 hover:text-black transition"
                     >
                         <FaArrowLeft className="mr-2" /> Back to Portfolio
