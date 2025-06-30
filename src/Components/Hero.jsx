@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-5">
                 {/* Left Content */}
                 <motion.div
-                    className="space-y-6 max-w-3xl"
+                    className="space-y-6 max-w-2xl"
                     initial={{ opacity: 0, x: -40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
@@ -56,7 +56,7 @@ const Hero = () => {
                         </a>
                     </div>
                     {/* Social Icons */}
-                    <div className="flex opacity-50 gap-4 md:gap-8 mt-10">
+                    <div className="flex opacity-50 gap-6 md:gap-8 mb-6 md:mb-0 md:mt-10">
                         <a
                             href="https://github.com/apurbagoon1"
                             target="_blank"

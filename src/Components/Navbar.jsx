@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0f172a]/60 backdrop-blur-md text-white">
-      <div className="max-w-7xl mx-auto px-4 py-4 md:py-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="text-3xl font-bold text-purple-400">Apurba Goon</h1>
 
         {/* Desktop Menu */}

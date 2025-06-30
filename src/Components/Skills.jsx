@@ -47,26 +47,26 @@ const Skills = () => {
     );
 
     return (
-        <section id="skills" className="bg-[#0f172a] text-white py-20 px-4 md:px-8">
+        <section id="skills" className="bg-[#0f172a] text-white py-10 md:py-20 px-4 md:px-8">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Skills</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Skills</h2>
                 <div className="h-1 w-24 mx-auto bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse mb-4"></div>
-                <p className="text-gray-300 md:text-lg  mb-12 max-w-2xl mx-auto">
+                <p className="text-gray-300 md:text-lg mb-6 md:mb-12 max-w-2xl mx-auto">
                     A snapshot of my technical toolkit — the languages, frameworks, and tools that power my projects.
                 </p>
 
-                <div className="mb-12" data-aos="fade-up">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-6 text-left">Frontend</h3>
+                <div className="mb-6 md:mb-12" data-aos="fade-up">
+                    <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-left">Frontend</h3>
                     {renderSkills(frontendSkills)}
                 </div>
 
-                <div className="mb-12" data-aos="fade-up" data-aos-delay="200">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-6 text-left">Backend</h3>
+                <div className="mb-6 md:mb-12" data-aos="fade-up" data-aos-delay="200">
+                    <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-left">Backend</h3>
                     {renderSkills(backendSkills)}
                 </div>
 
                 <div data-aos="fade-up" data-aos-delay="400">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-6 text-left">Tools & Technologies</h3>
+                    <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-left">Tools & Technologies</h3>
                     {renderSkills(toolsSkills)}
                 </div>
             </div>
