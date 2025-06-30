@@ -2,14 +2,15 @@ import React, { useRef } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Swal from "sweetalert2";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const formRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const form = formRef.current;
 
+        const form = formRef.current;
         const name = form.name.value.trim();
         const email = form.email.value.trim();
         const subject = form.subject.value.trim();
@@ -19,26 +20,41 @@ const Contact = () => {
             Swal.fire({
                 icon: "error",
                 title: "All fields are required!",
-                text: "Please fill out every field before submitting.",
+                text: "Please complete the form before submitting.",
                 confirmButtonColor: "#8b5cf6",
             });
             return;
         }
 
-        Swal.fire({
-            icon: "success",
-            title: "Message Sent!",
-            text: "Thank you for reaching out. I’ll get back to you soon.",
-            confirmButtonColor: "#06b6d4",
-        });
-
-        form.reset();
+        emailjs
+            .sendForm(
+                "service_sxlvgjp",     
+                "template_hez0zoe",
+                formRef.current,
+                "D2JTaI93v3maosU4J"      
+            )
+            .then(() => {
+                Swal.fire({
+                    icon: "success",
+                    title: "Message Sent!",
+                    text: "Your message was sent successfully.",
+                    confirmButtonColor: "#06b6d4",
+                });
+                form.reset();
+            })
+            .catch((error) => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Something went wrong!",
+                    text: error.text || "Unable to send message at the moment.",
+                    confirmButtonColor: "#ef4444",
+                });
+            });
     };
 
     return (
         <section className="bg-[#141e36] text-gray-300 py-16 px-4 md:px-8" id="contact">
             <div className="max-w-6xl mx-auto">
-                {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-2xl md:text-4xl font-bold text-white">
                         Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Touch</span>
