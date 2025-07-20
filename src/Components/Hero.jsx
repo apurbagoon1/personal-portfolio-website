@@ -12,7 +12,7 @@ const Hero = () => {
             id="home"
             className="min-h-screen bg-[#0f172a] text-white pt-24 md:pt-48 px-4 md:px-8"
         >
-            <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-5">
+            <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-5">
                 {/* Left Content */}
                 <motion.div
                     className="space-y-6 max-w-2xl"
@@ -21,10 +21,10 @@ const Hero = () => {
                     transition={{ duration: 1 }}
                 >
                     <span className="inline-flex items-center gap-2 rounded-full border border-purple-800 px-5 py-1 bg-[#13203f] md:text-lg font-medium">
-                    <LuSparkles /> Welcome to my portfolio!
+                        <LuSparkles /> Welcome to my portfolio!
                     </span>
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
                         Hi, I’m{" "}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
                             Apurba Goon
@@ -36,18 +36,20 @@ const Hero = () => {
                     </h2>
 
                     <p className="text-gray-400 md:text-lg leading-relaxed text-justify">
-                    Passionate about building real-world projects that solve real problems. With a strong focus for JavaScript and UI/UX, I bring your ideas to life through clean code and thoughtful
+                        Passionate about building real-world projects that solve real problems. With a strong focus for JavaScript and UI/UX, I bring your ideas to life through clean code and thoughtful
                         design.
                     </p>
 
                     <div className="flex flex-wrap gap-4 mt-8">
                         <a
-                            href="#"
-                            download
+                            href="https://drive.google.com/uc?export=download&id=1moU2wjy2MYvBX2A7dlDl8r4g0xXHY-Ha"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-6 py-2 md:text-lg rounded-lg bg-gradient-to-r from-purple-600 to-indigo-500 text-white font-medium shadow-md hover:scale-105 transition-transform duration-300 flex items-center gap-2"
                         >
                             <FiDownload size={20} /> Download Resume
                         </a>
+
                         <a
                             href="#contact"
                             className="px-6 py-2 md:text-lg rounded-lg border border-white text-white font-medium hover:bg-white hover:text-black transition-colors duration-300 flex items-center gap-2"
@@ -88,22 +90,59 @@ const Hero = () => {
 
                 {/* Right Image */}
                 <motion.div
-                    className="relative"
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
+                    className="relative flex items-center justify-center w-72 h-72 md:w-96 md:h-96 md:-mt-10 mb-4"
                 >
-                    <div className="w-64 h-64 md:w-88 md:h-88 rounded-full bg-gradient-to-tr from-purple-700 to-indigo-700 p-1.5 md:-mt-16">
-                        <img
-                            className="w-full h-full object-cover rounded-full"
-                            src={profile}
-                            alt="Profile"
-                        />
+                    {/* Animated Glowing Background Circle */}
+                    <motion.div
+                        animate={{
+                            scale: [1, 1.05, 1],
+                            opacity: [0.25, 0.5, 0.25],
+                        }}
+                        transition={{
+                            duration: 4,
+                            repeat: Infinity,
+                        }}
+                        className="absolute w-full h-full rounded-full bg-gradient-to-br from-purple-600 via-indigo-700 to-purple-600 blur-2xl"
+                    />
+
+                    {/* Gradient Border Circle */}
+                    <div className="absolute w-full h-full rounded-full border-[6px] border-transparent bg-gradient-to-tr from-purple-700 to-indigo-700 p-1" />
+
+                    {/* Profile Image */}
+                    <img
+                        src={profile}
+                        alt="Profile"
+                        className="relative z-10 w-full h-full object-cover rounded-full border-[4px] border-[#1e293b] shadow-2xl"
+                    />
+
+                    {/* Arrows */}
+                    <svg
+                        className="absolute left-[-50px] top-0 w-12 h-12 animate-pulse text-purple-600 opacity-50"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M15 19l-7-7 7-7" />
+                    </svg>
+
+                    <div className="absolute right-[-50px] bottom-0 flex items-center text-purple-600 opacity-50">
+                        <span className="text-3xl md:text-4xl font-semibold absolute bottom-2 md:-left-2">/</span>
+                        <svg
+                            className="w-12 h-12"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M9 5l7 7-7 7" />
+                        </svg>
                     </div>
-                    <span className="absolute bottom-4 right-4 md:bottom-8 md:right-6 bg-indigo-700 text-white px-3 py-2 text-sm rounded-full font-semibold shadow-lg tracking-wider">
-                        DEV
-                    </span>
                 </motion.div>
+
             </div>
         </section>
     );
