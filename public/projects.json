@@ -3,8 +3,8 @@
     "id": 1,
     "name": "Suggesto - Product Recommendation System",
     "images": [
-      "https://i.ibb.co/TxbzpWQ3/Screenshot-141.png",
-      "https://i.ibb.co/m5zyd59C/Screenshot-142.png",
+      "https://i.ibb.co/SXtjYFXf/Screenshot-189.png",
+      "https://i.ibb.co/XfDF7HHZ/Screenshot-186.png",
       "https://i.ibb.co/kgf37HHq/Screenshot-143.png",
       "https://i.ibb.co/fYGgbydY/Screenshot-144.png",
       "https://i.ibb.co/7f08L66/Screenshot-145.png"
@@ -16,7 +16,7 @@
     ],
     "description": "Suggesto allows users to add, update, and delete product-related queries, explore others’ queries, and recommend alternative products. Features include JWT authentication, protected routes, and a dynamic UI built with TailwindCSS and Framer Motion.",
     "liveLink": "https://suggesto-product-reco.web.app/",
-    "githubLink": "https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-apurbagoon1",
+    "githubLink": "https://github.com/apurbagoon1/suggesto--product-recommendation-system",
     "keyFeatures": [
       "Email/Password and Google sign-in with JWT authentication",
       "Protected routes with dynamic navigation",
@@ -52,7 +52,7 @@
     ],
     "description": "GreenNote helps plant lovers track care tasks, manage personalized plant dashboards, and monitor watering schedules. Features include theme toggling, authentication, and animated UI elements.",
     "liveLink": "https://plant-care-tracker-5772a.web.app/",
-    "githubLink": "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-apurbagoon1",
+    "githubLink": "https://github.com/apurbagoon1/greennote--plant-care-tracker",
     "keyFeatures": [
       "Secure login with email/password & Google OAuth",
       "Add, update, and delete personal plant data",
@@ -88,7 +88,7 @@
     ],
     "description": "Jasmine is an event platform to explore upcoming conferences, workshops, and exhibitions. Users can reserve seats, manage profiles, and browse blogs, all within a beautifully animated UI.",
     "liveLink": "https://jasmine-event-management.web.app/",
-    "githubLink": "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-apurbagoon1",
+    "githubLink": "https://github.com/apurbagoon1/jasmine--event-management-platform",
     "keyFeatures": [
       "Responsive navbar, footer & 404 page",
       "Firebase authentication with password rules",
@@ -110,7 +110,7 @@
   },
   {
     "id": 4,
-    "name": "DocTalk - Medical Appointment Booking Application",
+    "name": "DocTalk - Medical Appointment Booking",
     "images": [
       "https://i.ibb.co/G4TwsWyT/Screenshot-156.png",
       "https://i.ibb.co/ns0grq0F/Screenshot-157.png",
@@ -124,7 +124,7 @@
     ],
     "description": "DocTalk is a full medical appointment platform with multiple pages, secure authentication, data persistence via localStorage, and visual representation using Recharts. Users can browse doctors, view details, book appointments, and see real-time updates reflected in charts.",
     "liveLink": "https://agn-doc-talk.netlify.app/",
-    "githubLink": "https://github.com/programming-hero-web-course1/b11a8-router-booking-apurbagoon1",
+    "githubLink": "https://github.com/apurbagoon1/doctalk--medical-appointment-booking",
     "keyFeatures": [
       "Doctor cards with detailed info & availability badges",
       "Secure appointment booking with localStorage",

@@ -12,7 +12,7 @@ const Hero = () => {
             id="home"
             className="min-h-screen bg-[#0f172a] text-white pt-24 md:pt-48 px-4 md:px-8"
         >
-            <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-5">
+            <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
                 {/* Left Content */}
                 <motion.div
                     className="space-y-6 max-w-2xl"
@@ -85,7 +85,6 @@ const Hero = () => {
                             <FiMail />
                         </a>
                     </div>
-
                 </motion.div>
 
                 {/* Right Image */}
@@ -93,9 +92,8 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="relative flex items-center justify-center w-72 h-72 md:w-96 md:h-96 md:-mt-10 mb-4"
+                    className="relative flex items-center justify-center w-72 h-72 md:w-96 md:h-96 md:-mt-10 mb-5"
                 >
-                    {/* Animated Glowing Background Circle */}
                     <motion.div
                         animate={{
                             scale: [1, 1.05, 1],
@@ -108,7 +106,6 @@ const Hero = () => {
                         className="absolute w-full h-full rounded-full bg-gradient-to-br from-purple-600 via-indigo-700 to-purple-600 blur-2xl"
                     />
 
-                    {/* Gradient Border Circle */}
                     <div className="absolute w-full h-full rounded-full border-[6px] border-transparent bg-gradient-to-tr from-purple-700 to-indigo-700 p-1" />
 
                     {/* Profile Image */}
