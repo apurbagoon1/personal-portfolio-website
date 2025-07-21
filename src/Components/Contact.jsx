@@ -98,13 +98,13 @@ const Contact = () => {
 
                         {/* Social Icons */}
                         <div className="flex gap-5 pt-4">
-                            <a href="#" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
+                            <a href="https://github.com/apurbagoon1" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
                                 <FaGithub />
                             </a>
-                            <a href="#" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
+                            <a href="https://www.linkedin.com/in/apurbagoon1/" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
                                 <FaLinkedin />
                             </a>
-                            <a href="#" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
+                            <a href="https://x.com/ApurbaGoon1" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
                                 <FaTwitter />
                             </a>
                         </div>
