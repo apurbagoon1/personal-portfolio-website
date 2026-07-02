@@ -5,9 +5,9 @@ const Education = () => {
   return (
     <section id="education" className="bg-[#141e36] text-white py-10 md:py-20 px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Education</h2>
-        <div className="h-1 w-24 mx-auto bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse mb-4"></div>
-        <p className="text-gray-300 md:text-lg text-center mb-6 md:mb-12">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Education</span> </h2>
+        <div className="h-1 w-28 mx-auto bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse mb-4"></div>
+        <p className="text-gray-300 md:text-xl text-center mb-6 md:mb-12">
           My academic journey and educational background
         </p>
 

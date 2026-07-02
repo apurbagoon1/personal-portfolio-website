@@ -9,11 +9,11 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full z-50 bg-[#0f172a]/60 backdrop-blur-md text-white">
             <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/">
+                <a href="#">
                     <h1 className="text-3xl md:text-4xl font-logo font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
                         Apurba Goon
                     </h1>
-                </Link>
+                </a>
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex gap-5 lg:gap-10 font-medium text-lg">

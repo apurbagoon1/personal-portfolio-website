@@ -21,7 +21,7 @@ const Hero = () => {
                     transition={{ duration: 1 }}
                 >
                     <span className="inline-flex items-center gap-2 rounded-full border border-purple-800 px-5 py-1 bg-[#13203f] md:text-lg font-medium">
-                        <LuSparkles /> Welcome to my portfolio!
+                        <LuSparkles className="text-xl text-yellow-400 animate-pulse drop-shadow-[0_0_8px_rgba(253,224,71,0.9)]" /> Welcome to my portfolio!
                     </span>
 
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">

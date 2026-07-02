@@ -17,18 +17,14 @@ const Projects = () => {
       .then((data) => setProjects(data));
   }, []);
 
-  useEffect(() => {
-    document.title = "Apurba Goon | About";
-  }, []);
-
   return (
     <section id="projects" className="py-10 md:py-20 bg-[#0f172a] text-gray-300">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
-          Projects
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Projects</span> 
         </h2>
-        <div className="h-1 w-24 mx-auto bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse mb-4"></div>
-        <p className="text-gray-300 md:text-lg text-center mb-6 md:mb-12">Here are some of my recent projects that showcase my skills and experience</p>
+        <div className="h-1 w-28 mx-auto bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse mb-4"></div>
+        <p className="text-gray-300 md:text-xl text-center mb-6 md:mb-12">Here are some of my recent projects that showcase my skills and experience</p>
 
         <div className="grid md:grid-cols-2 gap-4 lg:gap-8">
           {projects.map((project) => (
