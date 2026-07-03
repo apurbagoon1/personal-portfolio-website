@@ -94,7 +94,7 @@ const Skills = () => {
         <h2 className="text-2xl md:text-4xl font-bold mb-4 ">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Skills</span>
         </h2>
-        <div className="h-1 w-24 mx-auto bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse mb-4"></div>
+        <div className="h-1 w-16 md:w-24 mx-auto bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse mb-4"></div>
         <p className="text-gray-300 md:text-xl mb-6 md:mb-12 max-w-2xl mx-auto">
           A snapshot of my technical toolkit — the languages, frameworks, and
           tools that power my projects.

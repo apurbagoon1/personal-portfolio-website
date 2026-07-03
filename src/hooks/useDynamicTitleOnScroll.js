@@ -1,23 +1,43 @@
 import { useEffect } from "react";
 
+const navItems = [
+  { id: "home", title: "Home" },
+  { id: "about", title: "About" },
+  { id: "skills", title: "Skills" },
+  { id: "education", title: "Education" },
+  { id: "projects", title: "Projects" },
+  { id: "contact", title: "Contact" },
+];
+
 const useDynamicTitleOnScroll = () => {
   useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const sectionId = entry.target.getAttribute("id");
-            document.title = `Apurba Goon | ${sectionId.charAt(0).toUpperCase() + sectionId.slice(1)}`;
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 180;
 
-    sections.forEach((section) => observer.observe(section));
+      for (const item of navItems) {
+        const section = document.getElementById(item.id);
 
-    return () => observer.disconnect();
+        if (!section) continue;
+
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+
+        if (
+          scrollPosition >= top &&
+          scrollPosition < top + height
+        ) {
+          document.title = `Apurba Goon | ${item.title}`;
+          break;
+        }
+      }
+    };
+
+    handleScroll(); 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 };
 

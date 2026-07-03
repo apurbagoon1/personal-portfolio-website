@@ -20,7 +20,7 @@ const About = () => {
             Me
           </span>
         </h2>
-        <div className="h-1 w-28 mx-auto bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse m-4"></div>
+        <div className="h-1 w-20 md:w-28 mx-auto bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse m-4"></div>
         <p className="text-gray-300 md:text-xl mb-6 md:mb-12">
           Discover my journey, passions, and what drives me as a developer
         </p>

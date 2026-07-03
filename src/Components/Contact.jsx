@@ -59,7 +59,7 @@ const Contact = () => {
                     <h2 className="text-2xl md:text-4xl font-bold text-white">
                         Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Touch</span>
                     </h2>
-                    <div className="h-1 w-28 mx-auto bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse my-4"></div>
+                    <div className="h-1 w-20 md:w-28 mx-auto bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse my-4"></div>
                     <p className="text-gray-300 md:text-xl max-w-xl mx-auto">
                         Feel free to reach out for collaborations or just a friendly hello
                     </p>
