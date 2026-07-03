@@ -72,7 +72,7 @@ const Contact = () => {
                         <p className="text-gray-400 max-w-lg">
                             I'm open for new opportunities and collaborations. If you're hiring or have a project in mind, feel free to reach out.
                         </p>
-                        <div className="space-y-4">
+                        <div className="space-y-4 mt-10">
                             <div className="flex items-center gap-4">
                                 <FaEnvelope className="text-purple-400 text-xl animate-pulse" />
                                 <div>
@@ -96,18 +96,6 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        {/* Social Icons */}
-                        <div className="flex gap-5 pt-4">
-                            <a href="https://github.com/apurbagoon1" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
-                                <FaGithub />
-                            </a>
-                            <a href="https://www.linkedin.com/in/apurbagoon1/" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
-                                <FaLinkedin />
-                            </a>
-                            <a href="https://x.com/ApurbaGoon1" className="text-xl md:text-2xl p-2.5 bg-[#1e293b]/70 rounded-full hover:text-cyan-400 hover:scale-110 transition-transform">
-                                <FaTwitter />
-                            </a>
-                        </div>
                     </div>
 
                     {/* Right Contact Form */}
@@ -137,7 +125,7 @@ const Contact = () => {
                         <textarea
                             name="message"
                             placeholder="Your Message"
-                            rows="5"
+                            rows="3"
                             className="w-full px-4 py-2 rounded-md bg-[#141e36]/40 border border-gray-600 focus:border-cyan-400 focus:outline-none transition"
                         ></textarea>
                         <button

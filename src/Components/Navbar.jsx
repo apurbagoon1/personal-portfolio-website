@@ -84,7 +84,7 @@ useEffect(() => {
             <li key={item.id}>
               <button
                 onClick={() => handleNavClick(item.id)}
-                className={`relative transition-colors duration-300 ${
+                className={`relative transition-colors duration-300 cursor-pointer ${
                   activeSection === item.id
                     ? "text-purple-400"
                     : "text-white hover:text-purple-300"
